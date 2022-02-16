@@ -15,8 +15,6 @@ module.exports = {
    async find(ctx) {
     let entities;
 
-    console.log(ctx.request.headers.authorization);
-
     const query = {...ctx.query, user: ctx.state.user }
 
     if (ctx.query._q) {
